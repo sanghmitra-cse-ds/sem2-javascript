@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 6 - DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="mainContainer">
+        <h1 id="mainHeading">Welcome to JavaScript Lab</h1>
+        <p class="subtitle">Name: Sanghmitra Shakya | Admission No: 2025B15410312</p>
+
+        <input type="text" id="headingInput" placeholder="Enter new heading text">
+
+        <div class="btn-row">
+            <button class="btn-blue" onclick="changeHeading()">Change Heading</button>
+            <button class="btn-blue" onclick="changeBackground()">Change Background</button>
+            <button class="btn-blue" onclick="increaseFontSize()">Increase Font Size</button>
+        </div>
+        <div class="btn-row">
+            <button class="btn-blue" onclick="toggleParagraph()">Show/Hide Paragraph</button>
+            <button class="btn-blue" onclick="resetPage()">Reset</button>
+        </div>
+
+        <p id="sampleParagraph" class="sample-para">
+            This is a sample paragraph. JavaScript events can dynamically change content.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

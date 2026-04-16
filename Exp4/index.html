@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 4 - Student Result Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Result Calculator</h1>
+        <p class="subtitle">Name: Sanghmitra Shakya | Admission No: 2025B15410312</p>
+
+        <div class="form-group">
+            <label for="numSubjects">Enter Number of Subjects</label>
+            <input type="number" id="numSubjects" min="1" max="10" value="5">
+        </div>
+
+        <button id="calculateBtn" onclick="calculateResult()">Calculate Result</button>
+
+        <div id="result" class="result-box" style="display:none;">
+            <p id="totalMarks"></p>
+            <p id="averageMarks"></p>
+            <p id="grade"></p>
+            <p id="resultStatus"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
