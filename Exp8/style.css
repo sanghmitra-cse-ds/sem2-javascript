@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.app-container {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 40px 36px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+.app-subtitle {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 28px;
+}
+
+.counter-display {
+    font-size: 72px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin: 20px 0;
+    transition: all 0.2s;
+}
+
+.counter-display.positive {
+    color: #1abc6e;
+}
+
+.counter-display.negative {
+    color: #e74c3c;
+}
+
+.counter-display.zero {
+    color: #1a1a2e;
+}
+
+.counter-label {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.btn-increment {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    font-weight: 600;
+}
+
+.btn-increment:hover {
+    background-color: #1558b0;
+    transform: scale(1.04);
+}
+
+.btn-decrement {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    font-weight: 600;
+}
+
+.btn-decrement:hover {
+    background-color: #1558b0;
+    transform: scale(1.04);
+}
+
+.btn-reset {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    font-weight: 600;
+}
+
+.btn-reset:hover {
+    background-color: #1558b0;
+    transform: scale(1.04);
+}
+
+.history-section {
+    margin-top: 24px;
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+}
+
+.history-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.history-item {
+    font-size: 13px;
+    color: #777;
+    padding: 3px 0;
+    border-bottom: 1px dashed #eee;
+}
