@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 16px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 460px;
+}
+
+.form-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 36px 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.form-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.form-subtitle {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #1abc6e;
+}
+
+input.error-input {
+    border-color: #e74c3c;
+}
+
+.error-msg {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.btn-register {
+    width: 100%;
+    background-color: #1abc6e;
+    color: white;
+    border: none;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background 0.2s;
+}
+
+.btn-register:hover {
+    background-color: #17a860;
+}
+
+.success-msg {
+    text-align: center;
+    color: #1abc6e;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 14px;
+}
+
+.users-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.users-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.user-item {
+    font-size: 14px;
+    color: #333;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-item:last-child {
+    border-bottom: none;
+}
+
+.user-dot {
+    width: 8px;
+    height: 8px;
+    background: #1abc6e;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.loading {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    padding: 10px 0;
+}
